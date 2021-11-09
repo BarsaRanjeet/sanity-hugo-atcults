@@ -1,0 +1,126 @@
+{{ define "main" }}
+<header style="background-image: url('/images/blog-banner.jpg'); height: 400px">
+  <div class="container" style="color: white; padding-top: 10%">
+    <h2 class="banner-title">BLOG</h2>
+    <ul class="bread_crumb p-0" style="display: flex; list-style-type: none">
+      <li><a href="/" style="text-decoration: none; color: white">Home</a></li>
+      <li>&#45;</li>
+      <li>
+        <a href="/blog" style="text-decoration: none; color: white">Blog</a>
+      </li>
+      <li>&#45;</li>
+      <li>{{ .Title }}</li>
+    </ul>
+  </div>
+</header>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 mb-5">
+        <div class="inner-blog-heading mb-4">
+          <h1>{{ .Title }}</h1>
+        </div>
+        <div class="clearfix"></div>
+        <div class="details">
+          <div class="float-left">
+            <span
+              ><i class="fa fa-pencil give-red-color" aria-hidden="true"></i
+            ></span>
+            <span>{{ .Params.author }}</span>
+            <span
+              ><i class="fa fa-calendar give-red-color" aria-hidden="true"></i
+            ></span>
+            <span>{{ .Params.postdate }}</span>
+          </div>
+          <div class="float-right">
+            <span
+              ><i class="fa fa-eye give-red-color" aria-hidden="true"></i
+            ></span>
+            <span>{{ .Params.views }}</span>
+            <span
+              ><i class="fa fa-heart-o give-red-color" aria-hidden="true"></i
+            ></span>
+            <span>{{ .Params.likes }}</span>
+          </div>
+        </div>
+        <hr class="grey-hr" />
+        <div class="clearfix"></div>
+        <div class="inner-blog-img mb-4">
+          <img
+            alt="blog-image"
+            class="img-fluid"
+            src="{{.Params.blogimage2}}"
+          />
+        </div>
+        <div class="clearfix"></div>
+        {{ .Content}} {{ partial "blog-content.html" . }}
+        <div class="tags-share-section mb-4">
+          <div class="float-left">
+            <span
+              ><i class="fa fa-tags give-red-color" aria-hidden="true"></i
+            ></span>
+            <span>Tags: </span>
+            {{ range (.GetTerms "tags") }}
+            <a href="/tags/{{.LinkTitle}}">{{ .LinkTitle }}</a>
+            {{ end }}
+          </div>
+          <div class="social float-right">
+            <span>Share:</span>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u={{ .Site.Params.url }}{{ .Site.BaseURL }}{{ .Params.url }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Facebook"
+            >
+              <i class="fa fa-facebook-official"> </i>
+            </a>
+            <a
+              href="https://twitter.com/intent/tweet?text={{ .Params.title }}&url={{ .Site.Params.url }}{{ .Site.BaseURL }}{{ .Params.url }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Twitter"
+            >
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Site.Params.url }}{{ .Site.BaseURL}}{{ .Params.url }}&title={{ .Params.title }}&summary={{ .Params.description }}&source={{ .Site.Params.title }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on LinkedIn"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a
+              href="https://plus.google.com/share?url={{ .Site.Params.url }}{{ .Site.BaseURL }}{{ .Params.url }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Google+"
+            >
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="blog-author mt-4 mb-4">
+          <div class="row">
+            <div class="col-md-2 author-image">
+              <img
+                alt="author-image"
+                class="author-img p-4 rounded-circle"
+                src="{{ .Params.authorimage}}"
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="author-details p-2">
+                <h2>About Author</h2>
+                <p>{{.Params.authorintroduction}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container0">{{ partial "what-to-do-next.html" . }}</div>
+      </div>
+      <div class="col-md-3 mb-5 sidebar">
+        {{ partial "blog-page-sidebar.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <script>$('.social').socialLinkBuilder();</script> -->
+{{ end }}

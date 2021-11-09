@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135963210-1"></script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P4G6JCP');</script>
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/blog.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/services.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/home.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/full-slider.min.css" defer>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <style>
+        .pagination {
+            display: flex;
+            list-style: none;
+            border-radius: .25rem;
+            margin: 20px 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .page-link {
+            position: relative;
+            display: block;
+            padding: .75rem 1rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: #007bff;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+        }
+
+        .homepage .page-link,
+        .listing .page-link {
+            background-color: #fff;
+        }
+
+        .page-item.disabled .page-link {
+            color: #6c757d;
+            pointer-events: none;
+            cursor: auto;
+            background-color: #fff;
+            border-color: #dee2e6;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+        
+        <title>Microsoft Dynamics 365</title>
+        
+    
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+<nav class="navbar navbar-expand-lg navbar-default fixed-top">
+    <div class="container"> <a class="navbar-brand" href="/"><img alt="Atcults Sculpting Future"
+                src="/images/logo-with-text1.png"></a>
+        <button class="btn navbar-toggler" type="button" id="btnToggle" data-toggle="collapse"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0;">
+            <div class="container" onclick="myFunction2(this)" style="padding: 0;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    
+                        <a class="nav-link" class="nav-link" href="/who-we-are/">WHO WE ARE</a>
+                        
+                </li>
+                <li class="nav-item">
+                    
+                        <a class="nav-link" href="/what-we-do/">WHAT WE DO</a>
+                    
+                </li>
+                <li class="nav-item">
+                    
+                        <a class="nav-link " href="/blog/">BLOG</a>
+                    
+                </li>
+                <li class="nav-item">
+                    
+                        <a class="nav-link" href="/work-with-us/">WORK WITH US</a>
+                        
+                </li>
+                <li class="nav-item">
+                    
+                        <a class="readmore-button getstarted" href="/contactus/">INQUIRE NOW</a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">WHO WE ARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/what-we-do/">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work-with-us/">WORK WITH US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="cookies--show bottom-sticky" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <p class="cookies__text">We use cookies to personalize our service and to improve your experience on
+                        the website and its subdomains. We also use this information for analytics.</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="float-left">
+                            <a class="cookie-knowmore" href="/privacy-policy/" rel="nofollow">More info</a>
+                        </div>
+                        <div class="float-right">
+                            <button class="accept-button"
+                                onclick="$.cookie('shown-cookie-policy', true); $('.cookies--show').hide()">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script> $(document).ready(function () { if ($.cookie('shown-cookie-policy') == null) { $('.cookies--show').show(); } }); </script>
+
+    <main class="site-main">
+        
+<header>
+  <div class="services-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">WHAT WE DO</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li> &#45; </li>
+        <li><a href="/what-we-do">What We Do</a></li>
+		<li> &#45; </li>
+		<li>Microsoft Dynamics 365</li>
+      </ul>
+    </div>
+  </div>
+</header>
+<nav id="navbar">
+    <div class="inner-menu">
+        <ul>
+            <li>
+                
+                    <a class="inner-menu ul li" href="/services/digital-marketing">Digital Marketing</a>
+                
+            </li>
+            <li>
+                
+                    <a class="inner-menu ul li" href="/services/mobile-and-web-apps">Mobile &#38; Web Apps</a>
+                
+            </li>
+            <li>
+                
+                    <a class="act" href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</a>
+                    
+            </li>
+            <li>
+                
+                    <a class="inner-menu ul li" href="/services/power-bi">Power BI</a>
+                
+                
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    $(window).scroll(function () { myFunction1() });
+  
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction1() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+<section class="mobile-view-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="needs">
+            <div class="heading-needs">
+              <h3>Reimagine what’s possible for your business with Dynamics 365.</h3>
+            </div>
+            <div class="content-needs">
+              <p class="text-justify">If you’re ready to learn how Dynamics 365 can help your business, you’re in the right place. Simply know how you can grow, evolve and transform every part of your business to better meet the needs of your customers. </p>
+<p class="text-justify">We’ll show you how you can capture new opportunities across your business when you bring people, data, and processes together with Microsoft business solutions -intelligent cloud applications that unify CRM and ERP capabilities to help you run your business end to end.</p>
+<iframe width="930" height="500" src="https://www.youtube.com/embed/hiaL1f4SQCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+          </div>
+          <div class="consider mt-3">
+            <div class="heading-consider">
+              <h3>Why should your business consider Microsoft Dynamics 365?</h3>
+            </div>
+            <div class="content-consider">
+              <ul>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>Improved operational efficiency and simplified service scheduling</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>Enhanced customization and communication</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>Right information to the right people</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>Targeted marketing campaigns</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>Seamless Excel integration, application and data source integration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="interested-form text-center">
+            <div class="heading-interested p-3">
+              <h3>Interested? Let’s talk!</h3>
+              <p>Let us take care of your needs</p>
+            </div>
+            <form class="let-us-form p-3" enctype='application/json' onsubmit="return false;">
+              <div class="col-md-12">
+                <input type="text" placeholder="Name*" name="fullname" id="iName"/>
+                <span id="ifirstErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <input type="number" class="quantity" onkeypress="return IsNumeric(event);" placeholder="Mobile" name="mobilephone" id="iMobNo"/>
+                <span id="icontactErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <input type="text" placeholder="Email*" name="emailaddress" id="iEmail"/>
+                <span id="iEmailErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <textarea rows="2" placeholder="Message*" id="iMessage" name="description"></textarea>
+                <span id="iMsgErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <button class="btn-submit" type="submit" id="submits">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="mobile-view-section mt-5">
+    <div class="container-fluid text-center p-0">
+      <div>
+        <div class="services-heading">
+          <h3>Our Microsoft Dynamics 365 Services</h3>
+          <hr style="margin-left: 49%;">
+        </div>
+        <div class="container mobile-view-section mt-5">
+          <div class="row mb-1">
+            <div class="col-md-6"><img class="inner-service-img img-fluid" src="/images/MD-img1.jpg" /></div>
+            <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+              <h2>Marketing Automation</h2>
+              <p>Marketing automation refers to software that automates your marketing for you. The software is designed to help you prioritize and execute your marketing tasks in a more streamlined and efficient way.The ultimate goal with your marketing is to generate more revenue for your company. To accomplish this, we need to drive traffic to our website, convert that traffic into leads and close those leads into customers. Where marketing automation really makes an impact is the conversion and closure stages of this process.</p>
+            </div></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>Sales</h2>
+                  <p>For professional services organizations looking to improve the effectiveness of their business development activities, the Microsoft Dynamics 365 Sales solution provides a best-in-class sales automation platform capable of managing your entire business development process. Available in a web browser interface, embedded directly in Microsoft Outlook, or via purpose-built mobile apps, Dynamics 365 Sales can help your organization gain a 360-degree view of critical business development processes, maximize revenue opportunities, and more effectively collaborate across pursuit teams.</p>
+                </div></div>
+            <div class="col-md-6"><img class="inner-service-img img-fluid" src="/images/MD-img2.jpg" /></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6"><img class="inner-service-img img-fluid" src="/images/MD-img3.jpg" /></div>
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>Customer Service</h2>
+                  <p>Technology is transforming the way customer service is being delivered. Microsoft Dynamics 365 for Customer Service enables your team to manage customer cases faster than ever before, providing the best service possible and keeping your customers happy and loyal. Dynamics 365 for Customer Service handles contracts, resources, work hours, unified service desk (USD), contacts, accounts, case management, and custom entities.</p>
+                </div></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>Data Migration</h2>
+                  <p>Migration Dynamics is the only Dynamics 365 migration solution that includes intelligent mapping and requires zero downtime. Now you can move your CRM data without needing to freeze users out or require double entry of data. Migration Dynamics is a tool that does the heavy lifting for you by reading the schema and metadata and intelligently pushing it to CRM Online. It won’t leave you worrying about the complex rules for creating records in CRM or having to do multiple passes at the data in order to create all of those relationships.</p>
+                </div></div>
+              <div class="col-md-6"><img class="inner-service-img img-fluid" src="/images/MD-img4.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="mobile-view-section mt-5">
+    <div class="container-fluid p-0">
+      <div class="img-fluid text-center" style="background: url(/images/why.jpg) center no-repeat;padding: 160px 0;background-size: cover;">
+      <div class="container">
+        <div class="row">
+    <div class="col-lg-9 mx-auto">
+        <div class="why-center-bg-white">
+          <div class="why-choose-us">
+            <div class="why-choose-us-heading">
+              <h3>Why choose us?</h3>
+            </div>
+            <div class="why-choose-us-content">
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> Total IT Software Solutions interfaces with clients to identify their requirement and accordingly, designs, develops and implements an integrated and comprehensive IT or software based solution.</p>
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> We put all of our energy into listening and understanding your needs, developing your custom solution, and striving to deliver above and beyond your requirements.</p>
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> We take pride in our work and treat your business initiatives as if they were ours, realizing that your success translates into ours.</p>
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> Proper documentation of your network is critical for us, fast resolution of problems and to get projects done right the first time.</p>
+            </div>
+          </div>
+          <div class="why-choose-us">
+            <div class="why-choose-us-heading">
+              <h3>Features</h3>
+            </div>
+            <div class="why-choose-us-content">
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> Fast Response To Requests & Critical Response Time Guaranteed.</p>
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> A Wide Spectrum Of Skills & Experience.</p>
+              <p><i class="fa fa-check give-red-color" aria-hidden="true"></i> Committed to Quality. Security is Paramount.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</section>
+    <section>
+    <div class="container">
+    <div class="row">
+  <div class="col-lg-9 mx-auto">
+    <div class="what-next-section mobile-view-section mt-5 mb-5">
+      <div class="what-next-form text-center">
+        <div class="heading-what-next">
+          <h2>What to do next..</h2>
+          <hr class="hr-middle" />
+        </div>
+        <div class="subheading">
+          <p>If you are worried about your digital presence for any particular reason, we would be very happy to help.</p>
+          <p>Call us now on 9081100202 to speak to one of our friendly Support Team or fill in the Quick Contact Form
+            above. You are also very welcome to visit us during our office hours, 6 days a week.</p>
+        </div>
+        <div class="form-content">
+          <form enctype='application/json' onsubmit="return true;">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="email" placeholder="Email*" name="emailaddress" id="emailaddressnext"/>
+                <span id="emailErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-6">
+                <input type="text" placeholder="Subject*" name="subject" id="subjectnext"/>
+                <span id="lastErrorMessage" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea placeholder="Message*" rows="2" id="messagenext" name="description"></textarea>
+                <span id="msgNextErrorMessage" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button class="btn-submit" type="button" id="submitnext">Submit</button>
+              </div>
+            </div>
+            <div id="loading" class="loading" style="display:none">
+                <p class="loader"></p>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div> 
+    <div class="clearfix"></div>
+  </section>
+
+    </main>
+    <footer id="footer">
+    <div id="footer1">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-address">
+                            <h3>Atcults</h3>
+                            <p>204, Shanti Mall, Sattadhar X Roads,<br>
+                                Sola Road, Ahmedabad, Gujarat 380061</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="newsletter-box">
+                            <h3>Subscribe for Our Newsletter</h3>
+                            <form enctype='application/json' onsubmit="return false;">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Enter your email" type="email"
+                                        name="emailaddress" id="subscribeemailaddress" />
+
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-theme" type="submit" id="submitsubscribe"><i
+                                                class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                    </span>
+                                </div>
+                                <span id="subemailErrorMessage" class="text-danger"></span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="Connect-new">
+                            <h3>Connect with us</h3>
+                            <ul>
+                                <li><a target="_blank" href="https://www.facebook.com/atcults"
+                                        rel="noreferrer noopener nofollow"><i class="fa fa-facebook fa-white"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/atcults"
+                                        rel="noreferrer noopener nofollow"><i class="fa fa-twitter fa-white"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/atcults"
+                                        rel="noreferrer noopener nofollow"><i class="fa fa-instagram fa-white"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a target="_blank" href="https://in.linkedin.com/company/atcults"
+                                        rel="noreferrer noopene nofollow"><i class="fa fa-linkedin fa-white"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-middle-bottom row">
+                    <div class="col-lg-4">
+                        <h4>Contact us via Email <span><a href="mailto:sales@atcults.com">sales@atcults.com</a>
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Prefer a human voice? <span><a href="tel:+91 99202 26788">+91 99202 26788</a> </span>
+                        </h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4>Prefer a web form? <span><a href="/contactus">Get in touch</a> </span> </h4>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 pt-4">
+                        <ul class="footer-top footer-top-link">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about/">Who We Are</a></li>
+                            <li><a href="/what-we-do/">What We Do</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/work-with-us/">Work with us</a></li>
+                            <li><a href="/contactus/">Inquire Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <p>© Copyright 2018 Atcults. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active"
+                            style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a rel="nofollow"
+                                class="main-nav__link" href="/">Home</a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active"
+                            style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a rel="nofollow"
+                                class="main-nav__link" href="/who-we-are">Who We Are</a>
+                        <li class="main-nav__item main-nav__item--active"
+                            style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a rel="nofollow"
+                                class="main-nav__link" href="/who-we-are">Who We Are</a>
+                        </li>
+                        <li class="main-nav__item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
+                                rel="nofollow" class="main-nav__link" href="/what-we-do">What We Do</a>
+                        </li>
+                        <li class="main-nav__item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
+                                rel="nofollow" class="main-nav__link" href="/blog/index">Blog</a>
+                        </li>
+                        <li class="main-nav__item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
+                                rel="nofollow" class="main-nav__link" href="/work-with-us">Work with us</a>
+                        </li>
+                        <li class="main-nav__item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><a
+                                rel="nofollow" class="main-nav__link" href="/contactus">Inquire Now</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4 Connect-new">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com/atcults" title="Facebook"
+                            target="_blank" rel="noreferrer noopener nofollow">
+                            <i class="fa fa-facebook fa-white" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://twitter.com/atcults" title="Twitter" target="_blank"
+                            rel="noreferrer noopener nofollow">
+                            <i class="fa fa-twitter fa-white" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com/atcults" title="Instagram"
+                            target="_blank" rel="noreferrer noopener nofollow">
+                            <i class="fa fa-instagram fa-white" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://in.linkedin.com/company/atcults" title="LinkedIn"
+                            target="_blank" rel="noreferrer noopener nofollow">
+                            <i class="fa fa-linkedin fa-white" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="newsletter-box">
+                    <h3>Subscribe for Our Newsletter</h3>
+                    <form enctype='application/json' onsubmit="return false;">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Enter your email" type="email"
+                                name="emailaddress" id="subscribeemailaddress" />
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-theme" type="submit" id="submitsubscribe"><i
+                                        class="fa fa-paper-plane give-red-color" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <span id="subemailErrorMessage" class="text-danger"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <small class="copyright">©Copyright&nbsp;2019&nbsp;Atcults. All Rights Reserved</small>
+                <a class="privacy-policy" href="/privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+</body>
+
+</html>

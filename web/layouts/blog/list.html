@@ -1,0 +1,58 @@
+{{ define "main" }}
+<header>
+    <div class="blog-background img-fluid">
+        <div class="container">
+            <h2 class="banner-title">BLOG</h2>
+            <ul class="bread_crumb p-0">
+                <li><a href="/">Home</a></li>
+                <li> &#45; </li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="mt-5 mb-5 post-list">
+    <div class="blog-grid-wrapper">
+        <div class="blog-grid-area section">
+            <div class="container">
+                <div class="row">
+                    {{ range .Paginator.Pages.ByDate.Reverse }}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-blog">
+                            <div class="blog-img"> <a href="{{ .Permalink}}"><img src="{{ .Params.blogimage1}}"
+                                        alt="blog"></a>
+                                <div class="blog-date"> <span>{{ .Params.date.Format "02 Jan"}}</span> </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="blog-title">
+                                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                                </div>
+                                <div class="blog-meta fix">
+                                    <ul>
+                                        <li class="pull-left"><span class="flaticon-user"></span>{{ .Params.author }}
+                                        </li>
+                                        <li class="pull-right"><span class="flaticon-folder"></span>{{ .Params.subject
+                                            }}</li>
+                                    </ul>
+                                </div>
+                                <div class="blog-content">
+                                    <p>{{ .Params.blogsummary }}</p>
+                                </div>
+                                <div class="blog-btn"> <a href="{{ .Permalink }}">Continue Reading <span
+                                            class="fa fa-long-arrow-right"></span></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    {{ end }}
+                </div>
+                <center>
+                    <div class="pt-4">
+                        {{ partial "pagination.html" . }}
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

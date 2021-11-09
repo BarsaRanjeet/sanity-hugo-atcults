@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135963210-1"></script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P4G6JCP');</script>
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/blog.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/services.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/home.min.css" defer>
+    <link type="text/css" rel="stylesheet" href="/css/full-slider.min.css" defer>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <style>
+        .pagination {
+            display: flex;
+            list-style: none;
+            border-radius: .25rem;
+            margin: 20px 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .page-link {
+            position: relative;
+            display: block;
+            padding: .75rem 1rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: #007bff;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+        }
+
+        .homepage .page-link,
+        .listing .page-link {
+            background-color: #fff;
+        }
+
+        .page-item.disabled .page-link {
+            color: #6c757d;
+            pointer-events: none;
+            cursor: auto;
+            background-color: #fff;
+            border-color: #dee2e6;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    {{ if .Title }}
+        
+        <title>{{ .Title }}</title>
+        {{else}}
+        <title>{{ .Site.Title }}</title>
+    {{ end }}
+    
+</head>

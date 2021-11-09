@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<head>
+  <title>Tags | Atcults Sculpting Online Presense</title>
+</head>
+<header>
+  <div class="blog-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">TAGS</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li> &#45; </li>
+        <li>Tags</li>
+        <li> &#45; </li>
+        <li style="text-transform:capitalize;">{{ .Name }}</li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="">
+    <h1 class="tag-heading mt-5">{{ .Name }}</h1>
+  </div>
+  <div class="tag-ul-li">
+    <ul class="tag-ul">
+      {{ range .Pages }}
+      <li><a href="/{{.Params.url}}">{{ .Title}}</a>&nbsp;&nbsp;( {{ .Date.Format "Jan 2 2006"}} | <span>Tags: </span>
+          {{ range (.GetTerms "tags") }}<a href="/tags/{{.LinkTitle}}"> {{ .LinkTitle }}  {{ end }})</a></li><br>
+        {{end}}
+    </ul>
+  </div>
+  <div class="mb-5">
+    <div id="tag-cloud">
+      <h1 class="tag-heading mt-5">All Tags:</h1>
+      <span class="tags-span">
+        {{ $s := .Site.Params }}
+        {{- $tagsLimit := (default 100 $s.numberOfTagsShown) }}
+        {{- range $key, $value := .Site.Taxonomies }}
+        {{- $onPageTags := $.Page.Params.tags }}
+        {{- $slicedTags := ($value.ByCount | first $tagsLimit) }}
+        {{- range $slicedTags }}
+        <a href='{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' title="{{ .Name }}">&nbsp;
+          {{ lower .Name }}
+        </a>
+        {{ end }}
+        {{ end }}
+      </span>
+    </div>
+  </div>
+</div>
+{{ end }}

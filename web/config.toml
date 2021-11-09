@@ -1,0 +1,43 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Atcults - sculpting online presense'
+paginate = 6
+
+
+[permalinks]
+  blog= '/:year/:month/:day/:title'
+[params]
+  contact_number = '+91 99202 26788'
+  email_address = 'sales@atcults.com'
+  gtm_id ='UA-135963210-1'
+  tag_page_layout= 'tag'
+  tag_page_dir= 'tags'
+  gtm_ga = true
+  title= 'Atcults - sculpting online presense'
+  url = 'https://atcults.com'
+  paginate = 3
+  
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+
+
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xhtml = true

@@ -1,0 +1,123 @@
+{{ define "main" }}
+<header>
+  <div class="services-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">WHAT WE DO</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li> &#45; </li>
+        <li><a href="/what-we-do">What We Do</a></li>
+		<li> &#45; </li>
+		<li>{{.Params.breadcrumbtitle}}</li>
+      </ul>
+    </div>
+  </div>
+</header>
+{{ partial "what-we-do-nevigation.html" . }}
+<section class="mobile-view-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="needs">
+            <div class="heading-needs">
+              <h3>{{.Params.title1}}</h3>
+            </div>
+            <div class="content-needs">
+              {{ .Content }}
+            </div>
+          </div>
+          <div class="consider mt-3">
+            <div class="heading-consider">
+              <h3>{{.Params.title2}}</h3>
+            </div>
+            <div class="content-consider">
+              <ul>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>{{ .Params.considerpointt1 }}</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>{{ .Params.considerpointt2 }}</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>{{ .Params.considerpointt3 }}</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>{{ .Params.considerpointt4 }}</li>
+                <li><i class="fa fa-hand-o-right give-red-color" aria-hidden="true"></i>{{ .Params.considerpointt5 }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="interested-form text-center">
+            <div class="heading-interested p-3">
+              <h3>Interested? Let’s talk!</h3>
+              <p>Let us take care of your needs</p>
+            </div>
+            <form class="let-us-form p-3" enctype='application/json' onsubmit="return false;">
+              <div class="col-md-12">
+                <input type="text" placeholder="Name*" name="fullname" id="iName"/>
+                <span id="ifirstErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <input type="number" class="quantity" onkeypress="return IsNumeric(event);" placeholder="Mobile" name="mobilephone" id="iMobNo"/>
+                <span id="icontactErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <input type="text" placeholder="Email*" name="emailaddress" id="iEmail"/>
+                <span id="iEmailErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <textarea rows="2" placeholder="Message*" id="iMessage" name="description"></textarea>
+                <span id="iMsgErrorMessage" class="text-danger"></span>
+              </div>
+              <div class="col-md-12">
+                <button class="btn-submit" type="submit" id="submits">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="mobile-view-section mt-5">
+    <div class="container-fluid text-center p-0">
+      <div>
+        <div class="services-heading">
+          <h3>{{.Params.title3}}</h3>
+          <hr style="margin-left: 49%;">
+        </div>
+        <div class="container mobile-view-section mt-5">
+          <div class="row mb-1">
+            <div class="col-md-6"><img class="inner-service-img img-fluid" src="{{.Params.img1}}" /></div>
+            <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+              <h2>{{.Params.heading1}}</h2>
+              <p>{{.Params.content1}}</p>
+            </div></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>{{.Params.heading2}}</h2>
+                  <p>{{.Params.content2}}</p>
+                </div></div>
+            <div class="col-md-6"><img class="inner-service-img img-fluid" src="{{.Params.img2}}" /></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6"><img class="inner-service-img img-fluid" src="{{.Params.img3}}" /></div>
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>{{.Params.heading3}}</h2>
+                  <p>{{.Params.content3}}</p>
+                </div></div>
+          </div>
+          <div class="row mb-1">
+              <div class="col-md-6 ml-auto d-flex align-items-center"><div class="service-content">
+                  <h2>{{.Params.heading4}}</h2>
+                  <p>{{.Params.content4}}</p>
+                </div></div>
+              <div class="col-md-6"><img class="inner-service-img img-fluid" src="{{.Params.img4}}" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{{ partial "why-choose-us.html" . }}
+    <section>
+    <div class="container">
+    {{ partial "what-to-do-next.html" . }}
+  </div> 
+    <div class="clearfix"></div>
+  </section>
+{{ end }}

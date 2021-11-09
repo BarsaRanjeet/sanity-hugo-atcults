@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "This a new project for atcults sanity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjeetbarsa/atcults-sanity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjeetbarsa/atcults-sanity/issues"
+  },
+  "homepage": "https://github.com/ranjeetbarsa/atcults-sanity#readme",
+  "dependencies": {
+    "@sanity/block-content-to-markdown": "0.0.5",
+    "@sanity/client": "^2.21.3",
+    "fs-extra": "^10.0.0"
+  }
+}

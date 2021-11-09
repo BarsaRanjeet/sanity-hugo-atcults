@@ -1,0 +1,2339 @@
+{{ define "main" }} {{ if eq .Title "What We Do | Atcults Sculpting Future" }}
+<header>
+  <div class="services-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">WHAT WE DO</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li>&#45;</li>
+        <li>What We Do</li>
+      </ul>
+    </div>
+  </div>
+</header>
+{{ partial "what-we-do-nevigation.html" . }}
+<article>
+  <section class="mobile-view-section mt-5 mb-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="innertitle">{{ .Params.title1 }}</h2>
+        <hr class="hr-middle" />
+        <p class="innertext">{{ .Content }}</p>
+      </div>
+    </div>
+  </section>
+  <section class="content-format">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="s01 img-fluid">
+          <div class="container">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 float-right s01-content">
+              <h4>{{ .Params.title2 }}</h4>
+              <hr class="hr-light" />
+              <div class="clearfix"></div>
+              <p>{{ .Params.content1 }}</p>
+              <p>
+                <a href="/services/digital-marketing" class="white-a"
+                  >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-format">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="s02 img-fluid">
+          <div class="container">
+            <div class="col-md-6 s02-content">
+              <h4>{{ .Params.title3 }}</h4>
+              <hr />
+              <div class="clearfix"></div>
+              <p>{{ .Params.content2 }}</p>
+              <p>
+                <a href="/services/mobile-and-web-apps"
+                  >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-format">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="s03 img-fluid">
+          <div class="container">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 float-right s01-content">
+              <h4>{{ .Params.title4 }}</h4>
+              <hr class="hr-light" />
+              <div class="clearfix"></div>
+              <p>{{ .Params.content3 }}</p>
+              <p>
+                <a href="/services/microsoft-dynamics-365" class="white-a"
+                  >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-format">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="s04 img-fluid">
+          <div class="container">
+            <div class="col-md-6 s02-content">
+              <h4>{{ .Params.title5 }}</h4>
+              <hr />
+              <div class="clearfix"></div>
+              <p>{{ .Params.content4 }}</p>
+              <p>
+                <a href="/services/power-bi"
+                  >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">{{ partial "what-to-do-next.html" . }}</div>
+  </section>
+</article>
+{{else if eq .Title "Who We Are | Atcults Sculpting Future"}}
+<article>
+  <header>
+    <div class="about-background img-fluid">
+      <div class="container">
+        <h2 class="banner-title">WHO WE ARE</h2>
+        <ul class="bread_crumb p-0">
+          <li><a href="/">Home</a></li>
+          <li>&#45;</li>
+          <li>Who we are</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="mobile-view-section mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h2 class="open-heading">{{ .Params.title1}}</h2>
+            <hr class="style-hr-center" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mobile-view-section mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="text-center">
+            <p class="desc-text">{{ .Content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mobile-view-section mt-5">
+    <div class="container0 text-center">
+      <div class="">
+        <h2 class="open-heading">{{ .Params.title2}}</h2>
+        <hr class="style-hr-center" />
+      </div>
+      <div class="container0">
+        <div class="red-box">
+          <div class="row m-0 p-5">
+            <div class="col-lg-3">
+              <div class="process-icon">
+                <img alt="Process Icon" src="{{.Params.image2}}" />
+              </div>
+              <h4>Planning</h4>
+            </div>
+            <div class="col-lg-3">
+              <div class="process-icon">
+                <img alt="Process Icon" src="{{.Params.image3}}" />
+              </div>
+              <h4>Research</h4>
+            </div>
+            <div class="col-lg-3">
+              <div class="process-icon">
+                <img alt="Process Icon" src="{{.Params.image4}}" />
+              </div>
+              <h4>Optimizing</h4>
+            </div>
+            <div class="col-lg-3">
+              <div class="process-icon">
+                <img alt="Process Icon" src="{{.Params.image5}}" />
+              </div>
+              <h4>Results</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container0">
+      <div class="row ml-0 mr-0">
+        <div class="col-md-6 pl-0 pr-0">
+          <div>
+            <img class="img-fluid" src="{{.Params.image1}}" alt="Our Vision" />
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-5 ml-auto d-flex align-items-center">
+          <div class="mr-5">
+            <div>
+              <h2 class="mobile-view-section open-heading">
+                {{ .Params.title3}}
+              </h2>
+              <hr class="hr" />
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <p class="desc-text text-justify">{{ .Params.content1}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="col-md-12">
+          <div class="testimonial-top">
+            <h2>Meet The Team</h2>
+            <hr class="style-hr-center" />
+            <p>
+              We are passionate and experienced digital marketers influenced by
+              a growing and thriving digital economy.
+            </p>
+          </div>
+          <div
+            id="carouselExampleIndicatorss"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="5"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="6"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="7"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="8"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="9"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="10"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="11"
+                class=""
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="12"
+                class=""
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team3.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Sunil Gupta</h4>
+                          <h6 class="card-category text-muted">CEO</h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+918160246812"
+                                >+91 8160246812</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:sunil@atcults.com"
+                                >sunil@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/profile.php?id=1560238091"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/sunil-gupta-57962214/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team3.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Ankit Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Director Sales
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919726559226"
+                                >+91 9726559226</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:ankit@atcults.com"
+                                >ankit@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/profile.php?id=595641988"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://twitter.com/ankit4p"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/ankit-patel-12803137/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team3.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Rinkal Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Technical Lead
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+918140791304"
+                                >+91 8140791304</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:rinkal@atcults.com"
+                                >rinkal@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/rinnkal.patel"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://twitter.com/RinkalPatel10"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.instagram.com/rinkalpatel999/?hl=en"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/rinkal-patel-b0a59632/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team1.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Sunny Rajwadi</h4>
+                          <h6 class="card-category text-muted">
+                            Client Engagement
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919374021723"
+                                >+91 9374021723</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:sunny@atcults.com"
+                                >sunny@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/sunny.rajwadi"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://twitter.com/sunnyrajwadi/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.instagram.com/sunny_rajwadi/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/sunnyrajwadi/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team2.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Shivangi Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Senior Quality Assurance
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+918140682001"
+                                >+91 8140682001</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:shivangi@atcults.com"
+                                >shivangi@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/profile.php?id=100001431785941"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.instagram.com/patelshivangi99/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/shivangi-patel-6a8b3549/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team1.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Kalpesh Rathavi</h4>
+                          <h6 class="card-category text-muted">
+                            Creative Head
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919825085869"
+                                >+91 9825085869</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:kalpesh@atcults.com"
+                                >kalpesh@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team2.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Viral Jani</h4>
+                          <h6 class="card-category text-muted">
+                            UI / UX Designer
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+918758054048"
+                                >+91 8758054048</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:viral@atcults.com"
+                                >viral@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/viral.jani.58"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://twitter.com/itsviral_jani"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/viral-jani-486931161/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team1.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Ravi Raval</h4>
+                          <h6 class="card-category text-muted">
+                            Senior Software Engineer
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919033147357"
+                                >+91 9033147357</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:ravi@atcults.com"
+                                >ravi@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/ravieejordan"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.instagram.com/raviiee_rj/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/ravi-raval-01309ba8/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team1.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Nishit Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Senior Software Engineer
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+918866235022"
+                                >+91 8866235022</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:nishit@atcults.com"
+                                >nishit@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a
+                              href="https://www.facebook.com/nishit.patel.5099"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a
+                              href="https://www.linkedin.com/in/nishit-patel-9269aa55/"
+                              class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team2.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Pinky Modi</h4>
+                          <h6 class="card-category text-muted">
+                            Client Engagement
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919374021723"
+                                >+91 9374021723</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:pinky@atcults.com"
+                                >pinky@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team3.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Taral Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Client Engagement
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+447442160651"
+                                >+44 (744) 216-0651</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:tpatel@atcults.com"
+                                >tpatel@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team2.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Neha Patel</h4>
+                          <h6 class="card-category text-muted">
+                            Client Engagement
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+447952641768"
+                                >+44 (795) 264-1768</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:npatel@atcults.com"
+                                >npatel@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-testimonial card-plain">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img src="/images/team2.png" alt="" />
+                        </div>
+                        <div class="col-lg-6">
+                          <h4 class="card-title">Neepa Gandhi</h4>
+                          <h6 class="card-category text-muted">
+                            Client Engagement
+                          </h6>
+                          <div class="card-description">
+                            <span
+                              ><i
+                                class="fa fa-phone"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="tel:+919920226788"
+                                >+91 9920226788</a
+                              ></span
+                            ><br />
+                            <span
+                              ><i
+                                class="fa fa-envelope"
+                                aria-hidden="true"
+                              ></i></span
+                            ><span
+                              ><a href="mailto:neepa@atcults.com"
+                                >neepa@atcults.com</a
+                              ></span
+                            >
+                          </div>
+                          <span
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-twitter"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-instagram team-icons"
+                                aria-hidden="true"
+                              ></i></a
+                            ><a href="#" class="team-icons"
+                              ><i
+                                class="fa fa-linkedin"
+                                aria-hidden="true"
+                              ></i></a
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicatorss"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicatorss"
+                role="button"
+                data-slide="next"
+                ><span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mobile-view-section mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-6">
+          <h3>We're hiring!</h3>
+          <h2 class="open-heading">Interested in working with our team?</h2>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            <a class="resume-button getstarted" href="/work-with-us"
+              ><i class="fa fa-envelope-open" aria-hidden="true"></i
+              ><span class="drop-text">Drop your resume here</span></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+{{else if eq .Title "Work With Us | Atcults Sculpting Future"}}
+<header>
+  <div class="career-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">WORK WITH US</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li>&#45;</li>
+        <li>Work with us</li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <h2 class="open-heading">Open positions</h2>
+          <hr class="style-hr-center" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-position">
+            We’re looking for people to join the team who are as excited as we
+            are to help build the platform that empowers the future generation
+            of creators to be successful online.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu1"
+          aria-expanded="false"
+          aria-controls="menu1"
+          ><span class="cell-job-count">UI/UX Designer</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu1" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 2
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            Ahmedabad</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> 2-4
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Gathering and evaluating user
+            requirements, in collaboration with product managers and engineers.
+            Illustrating design ideas using storyboards, process flows and
+            sitemap. Designing graphic user interface elements, like menus, tabs
+            and widgets.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a UI/UX Designer to turn our
+            software into easy-to-use products for our clients. UI/UX Designer
+            responsibilities include gathering user requirements, designing
+            graphic elements and building navigation components. To be
+            successful in this role, you should have experience with design
+            software and wireframe tools. If you also have a portfolio of
+            professional design projects that includes work with web/mobile
+            applications, we’d like to meet you. Ultimately, you’ll create both
+            functional and appealing features that address our clients’ needs
+            and help us grow our customer base.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu2"
+          aria-expanded="false"
+          aria-controls="menu2"
+          ><span class="cell-job-count">SEO Analyst</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu2" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 3
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            UK</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> 1-3
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Conducting keyword research using various
+            tools (like Keyword Planner and Moz). Performing competitive
+            analysis and identifying gaps in our content or areas of improvement
+            in our web design. Tracking important SEO metrics including organic
+            traffic, conversion rates and time spent on page.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for an SEO Analyst to join our
+            Marketing team and help us build a strong online presence. SEO
+            Analyst responsibilities include performing keyword research,
+            optimizing our content and monitoring user engagement across our
+            website. To be successful in this role, you should be familiar with
+            current SEO techniques and tools and have excellent analytical
+            skills. Ultimately, you will apply effective SEO strategies to
+            ensure we attract and engage our target audience and convert
+            visitors into customers.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu3"
+          aria-expanded="false"
+          aria-controls="menu3"
+          ><span class="cell-job-count">Social Media Analyst</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu3" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 3
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            USA</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> >1
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Analyzing user engagement (e.g.
+            click-through and bounce rates). Reporting on web traffic for all
+            social media. Building and supporting SEO strategies by implementing
+            keyword priorities into content marketing projects.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a Social Media Analyst to monitor
+            our social media initiatives and implement successful marketing
+            practices. For this role, you should have a deep understanding of
+            how different social networks operate and be familiar with Search
+            Engine Optimization (SEO) for online content. If you’re a tech-savvy
+            professional with interest in the latest trends in digital
+            technologies, we would like to meet you. Ultimately, you should
+            strengthen our online presence and increase our brand awareness
+            through effective social media strategies and campaigns.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu4"
+          aria-expanded="false"
+          aria-controls="menu4"
+          ><span class="cell-job-count">Marketing</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu4" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 5
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            Ahmedabad</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> 3-5
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Analyzing sales funnels and customer
+            intent. Measuring performance of online and offline campaigns.
+            Reporting on marketing KPIs like leads, conversion rates, website
+            traffic and social media engagement.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a Marketing Analyst who’ll
+            research and identify ways to build our brand and acquire new
+            clients. Marketing Analyst responsibilities include tracking
+            advertising costs, researching consumer behavior and exploring
+            market trends and opportunities. To be successful in this role, you
+            should have experience with PPC campaigns and be comfortable with
+            processing and analyzing marketing data. Ultimately, you will help
+            us ensure we spend our marketing budget efficiently and we target
+            our audience through successful campaigns.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu5"
+          aria-expanded="false"
+          aria-controls="menu5"
+          ><span class="cell-job-count">Co-ordinator</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu5" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 1
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            USA</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> 1-4
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Instituting protocols for the use of IT
+            across departments and projects. Providing advice on the most
+            suitable IT choices. Providing technical support or training for
+            systems and networks.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a skilled IT coordinator who will
+            maintain our information technology systems and networks. You will
+            perform both technical and administrative tasks to ensure
+            functionality and efficiency of computer and telecom systems.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu6"
+          aria-expanded="false"
+          aria-controls="menu6"
+          ><span class="cell-job-count">CRM Director</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu6" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 1
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            UK</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> >3
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Monitoring relationships with existing
+            customers through CRM systems. Ensuring the CRM system provides an
+            effective sales funnel. Developing and implementing marketing
+            techniques that will drive new customers.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a CRM Director to set and monitor
+            marketing strategies that will foster profitable long-term
+            relationships with clients. In this role, you will coordinate with
+            our Sales and Marketing directors to boost our company’s market
+            presence and increase customer engagement. To be successful in this
+            position, you should have solid experience with Customer
+            Relationship Systems and KPI metrics. You should also be able to
+            identify new opportunities and proactively address customer
+            concerns. Ultimately, we want you to increase revenues and achieve
+            business goals by building a customer-oriented company.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        <a
+          class="card-link"
+          data-toggle="collapse"
+          href="#menu7"
+          aria-expanded="false"
+          aria-controls="menu7"
+          ><span class="cell-job-count">Content Writers</span
+          ><span class="collapsed"
+            ><span class="expand-icon"
+              ><i class="fa fa-plus" aria-hidden="true"></i></span
+          ></span>
+          <span class="expanded"
+            ><span class="expand-icon"
+              ><i class="fa fa-minus" aria-hidden="true"></i></span></span
+        ></a>
+      </div>
+      <div id="menu7" class="collapse">
+        <div class="card-body">
+          <span class="cell-locations"
+            ><i class="fa fa-user fa-opening" aria-hidden="true"></i> 2
+            vacancies</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-location-arrow fa-opening" aria-hidden="true"></i>
+            Ahmedabad</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-clock-o fa-opening" aria-hidden="true"></i> >3
+            years</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-graduation-cap fa-opening" aria-hidden="true"></i>
+            Any graduate</span
+          >
+          <span class="cell-locations"
+            ><i class="fa fa-suitcase fa-opening" aria-hidden="true"></i> Full
+            Time</span
+          ><br />
+          <span class="cell-department"
+            ><b>Responsibilities:</b> Researching industry-related topics.
+            Preparing well-structured drafts using digital word processing and
+            publishing platforms. Creating and distributing marketing copy to
+            advertise our company and products.</span
+          ><br />
+          <span class="cell-department"
+            ><b>Brief:</b> We are looking for a Content Creator to write and
+            publish various types of pieces for our company’s web pages, like
+            articles, ebooks and social media posts. Content Creator
+            responsibilities include producing marketing copy to advertise our
+            products, writing blog posts about industry-related topics and
+            promoting our content on social media. To be successful in this
+            role, you should have experience with digital publishing and
+            generating traffic and leads for new business. Please share samples
+            of your work (portfolio or links to published articles) along with
+            your application. Ultimately, you will help us reach our target
+            audience by delivering both useful and appealing online information
+            about our company and products.</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <h2 class="open-heading">Submit your application</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-5 mb-5">
+  <div class="container">
+    <div class="career-form">
+      <form enctype="application/json" onsubmit="return false;">
+        <div class="row career-top">
+          <div class="col-md-4">
+            <input type="text" name="yourname" id="Name" placeholder="Name*" />
+            <span id="NameErrorMessage" class="text-danger"></span>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="number"
+              name="mobilenumber"
+              class="quantity"
+              onkeypress="return IsNumeric(event);"
+              id="MobNo"
+              placeholder="Mobile Number"
+            />
+            <span id="MobNoErrorMessage" class="text-danger"></span>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="email"
+              name="emailaddress"
+              id="Email"
+              placeholder="Email Address*"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            />
+            <span id="EmailErrorMessage" class="text-danger"></span>
+          </div>
+          <div class="career-form-down col-md-12">
+            <textarea rows="5" id="Message" placeholder="Message*"></textarea>
+            <span id="MessageErrorMessage" class="text-danger"></span>
+          </div>
+          <div class="col-md-12 file-upload-input">
+            <input type="file" id="File" name="fileupload" />
+            <span id="FileErrorMessage" class="text-danger"></span>
+          </div>
+          <div class="col-md-12">
+            <button class="btn_sub" type="submit" id="Submit">Submit</button>
+          </div>
+          <div id="loading" class="loading" style="display: none">
+            <p class="loader"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{{else if eq .Title "Contact Us | Atcults Sculpting Future"}}
+<header>
+  <div class="contact-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">CONTACT US</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li>&#45;</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="mobile-view-section mt-5">
+  <div class="contact-mobile-view container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h2 class="head-text">Get in touch</h2>
+        <hr class="hr-style" />
+        <div class="clearfix"></div>
+        <div class="box-call">
+          <i class="fa fa-phone fa-style" aria-hidden="true"></i>
+          <span
+            ><a class="links" href="tel:+91 99202 26788"
+              >+91 99202 26788</a
+            ></span
+          >
+        </div>
+        <div class="box-call">
+          <i class="fa fa-envelope fa-style" aria-hidden="true"></i>
+          <span
+            ><a class="links" href="mailto:sales@atcults.com"
+              >sales@atcults.com</a
+            ></span
+          >
+        </div>
+        <div class="box-call">
+          <i class="fa fa-location-arrow fa-style" aria-hidden="true"></i>
+          <span
+            >204, Shanti Mall, Sattadhar X Roads, Sola Road, Ahmedabad, Gujarat
+            380061</span
+          >
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="contact-us-form">
+          <h2 class="head-text">Contact Us</h2>
+          <hr class="hr-style" />
+          <div class="clearfix"></div>
+          <h1 class="heading">
+            Please provide us with as much information possible for us to help
+            you with your enquiry!
+          </h1>
+          <form enctype="application/json" onsubmit="return false;">
+            <div class="row get-in-touch">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Name*"
+                    id="yourname"
+                  />
+                  <span id="firstErrorMessage" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="quantity"
+                    onkeypress="return IsNumeric(event);"
+                    name="mobilephone"
+                    placeholder="Mobile Number"
+                    id="mobilenumber"
+                  />
+                  <span id="contactErrorMessage" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="emailaddress"
+                    placeholder="Email Address*"
+                    id="emailaddress"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                  />
+                  <span id="emailErrorMessage" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject*"
+                    id="subject"
+                  />
+                  <span id="lastErrorMessage" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea
+                    rows="4"
+                    placeholder="Message*"
+                    id="message"
+                    name="description"
+                  ></textarea>
+                  <span id="msgErrorMessage" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <button class="btn_sub" type="submit" id="submitf">
+                    Submit
+                  </button>
+                </div>
+              </div>
+              <div id="message_post"></div>
+              <div id="loading" class="loading" style="display: none">
+                <p class="loader"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-5">
+  <div class="contact-us-map">
+    <iframe
+      src="https://www.google.com/maps/d/u/0/embed?mid=1sklkJbYYBeyYLOP1DsNpu3pcQ6pXs3Ie"
+      width="100%"
+      height="350"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="clearfix"></div>
+</section>
+{{else if eq .Title "Privacy Policy"}}
+<header>
+  <div class="privacy-background img-fluid">
+    <div class="container">
+      <h2 class="banner-title">PRIVACY POLICY</h2>
+      <ul class="bread_crumb p-0">
+        <li><a href="/">Home</a></li>
+        <li>&#45;</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="mobile-view-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <h2 class="open-heading">Privacy Policy</h2>
+          <hr class="style-hr-center" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            This Privacy Policy explains what information is collected by
+            Atcults when you visit the atcults.com website (hereinafter “the
+            website”), visit any related websites (hereinafter “subdomains”),
+            use any other services provided by Atcults, or communicate with us
+            by any means including by email, phone, messenger, or any other
+            medium. This Privacy Policy also explains how you can control the
+            information we collect, how this information will be used, and how
+            to contact us. This document describes how we protect your personal
+            data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">1. Who collects data about you</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            Your data is collected by Atcults and is not used by or shared with
+            anyone not mentioned in this Privacy Policy. If you have any
+            questions, comments, or requests related to data collection or this
+            policy, please contact us at
+            <a href="mailto:info@atcults.com">info@atcults.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">2. What data we collect about you</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="privacy-subheading">
+          <h4>2.1 When you contact us</h4>
+          <p class="desc-text">
+            We collect data that you submit through the contact form on our
+            website or that you disclose to us by other means such as orally
+            (over a call) or in writing (in an email or other text message). We
+            collect your full name, email address, phone number, and any
+            additional information you provide.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>2.2 When you subscribe to our updates</h4>
+          <p class="desc-text">
+            When you subscribe to our updates via the blog, we collect the email
+            address you provide and your subscription preferences.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>2.3 When you apply for a job</h4>
+          <p class="desc-text">
+            When you apply to join our team, we collect information from your CV
+            and any additional information you provide us by any written or oral
+            means.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>
+            2.4 Data that is automatically collected when you visit the website
+            and subdomains
+          </h4>
+          <h5>2.4.1 Third-party services</h5>
+          <p class="desc-text">
+            Our website and subdomains use third-party services to collect
+            standard internet log information and details about visitors’
+            behavior patterns. To collect this information, we use Google
+            Analytics. We do this to improve your experience on our website and
+            to provide you with the most relevant information. Google Analytics
+            gives us information about user behavior such as platforms and
+            browsers used to access the website and subdomains, pages visited on
+            the website and subdomains, the region from which a visitor is
+            accessing the website and subdomains, how a visitor accessed our
+            website and subdomains (e.g. via search engines, referring pages,
+            direct visits), and other behavioral information. We carefully
+            investigate all third-party services that we use to make sure they
+            are compliant with all current regulations.
+          </p>
+          <h5>2.4.2 Cookies</h5>
+          <p class="desc-text">
+            We use cookies to personalize our service and to improve the
+            experience on our website and subdomains.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">3. How we use your personal data</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="privacy-subheading">
+          <h4>3.1 For contacting you</h4>
+          <p class="desc-text">
+            We will use your email address, phone number, or other contact
+            information you provide us by written or oral means for contacting
+            you and providing you with the services and information that you
+            request; it also allows us to correctly respond to your comments and
+            questions.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>3.2 For establishing business relations</h4>
+          <p class="desc-text">
+            If you are an existing customer of Atcults or we reasonably believe
+            that you might want to be our customer, we will use your email
+            address, phone number, and other contact information you provide us
+            by written or oral means for establishing a business relationship,
+            sending you information about our services, and providing you with
+            updates that may be related to your personal and professional
+            interests.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>3.3 For providing you with information</h4>
+          <p class="desc-text">
+            If you have subscribed to our updates, we will use the email address
+            you provided to send information about our services, recent updates,
+            latest products, case studies, and research.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>3.4 For automated processing</h4>
+          <p class="desc-text">
+            If you visit the website, data about your behavior on the site will
+            be automatically processed by cookies and third-party services to
+            help us better understand your preferences and improve your
+            experience on the website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">4. Third parties</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div>
+          <p class="desc-text">
+            To ensure the security of your sensitive information, we carefully
+            select third-party services that we use. We use exceptional services
+            that claim they are compliant with GDPR and other data protection
+            regulations. You can contact us at
+            <a href="mailto:info@atcults.com">info@atcults.com</a> for more
+            information about taking appropriate and suitable security measures.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>4.1 Third-party services</h4>
+          <p class="desc-text">
+            Your data may be transferred to third-party services including
+            Google Analytics and MailChimp, all of which are compliant with GDPR
+            and other regulations. Their privacy policies can be found here:<br />
+            Google Analytics –
+            <a href="https://policies.google.com/privacy"
+              >https://policies.google.com/privacy</a
+            ><br />
+            MailChimp –
+            <a href="https://mailchimp.com/legal/privacy"
+              >https://mailchimp.com/legal/privacy</a
+            >
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>4.2 Subcontractors</h4>
+          <p class="desc-text">
+            Your data may also be transferred to subcontractors. During this
+            process, data may be transferred to parties located in countries
+            outside the EU that are not bound by EU data protection regulations
+            (for example, to parties in Ukraine). However, to protect your data,
+            we always sign contracts with our subcontractors that contain
+            provisions for the protection of user data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">
+          5. How to withdraw your consent for collecting, processing, and using
+          your data
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            You have the right to withdraw consent for collecting, processing,
+            and using your data at any time by sending an email to
+            <a href="mailto:info@atcults.com">info@atcults.com</a>. If you are
+            receiving our emails, you can unsubscribe by clicking the
+            Unsubscribe button in any email or by just replying with a request
+            to unsubscribe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">6. How long your data is stored for</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            Your data will be stored until the moment you withdraw your consent
+            or our business relationship is broken off, whichever happens later.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">7. Your rights as a data subject</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="privacy-subheading">
+          <h4>7.1 Right to access</h4>
+          <p class="desc-text">
+            You have the right to find out what data is being collected and
+            processed, how it is being used, for how long it is being stored, if
+            your data has been transferred to any third parties, and how you can
+            withdraw your consent for data collection, processing, and use.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>7.2 Right to rectification</h4>
+          <p class="desc-text">
+            You have the right to ask that we rectify inaccurate personal data.
+            Taking into account the purposes of data processing, you have the
+            right to have incomplete personal data completed, including by means
+            of providing a supplementary statement.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>7.3 Right to erasure</h4>
+          <p class="desc-text">
+            You have the right to obtain from us the erasure of your personal
+            data when this personal data is no longer necessary in relation to
+            the purposes for which it was collected or otherwise processed, when
+            you withdraw your consent on which the processing was based, or when
+            your data is processed illegally.
+          </p>
+        </div>
+        <div class="privacy-subheading">
+          <h4>7.4 Right to restrict processing</h4>
+          <p class="desc-text">
+            You have the right to restrict us from processing your data if:<br />
+            - you contest the accuracy of your personal data; in this case, we
+            shall not process your data for a period sufficient for us to verify
+            the accuracy of the personal data;<br />
+            - the processing is unlawful and you oppose the erasure of your
+            personal data and request the restriction of its use instead;<br />
+            - your personal data is no longer needed for the purposes of
+            processing but is still required by you for the establishment,
+            exercise, or defence of legal claims;<br />
+            - you object to processing your personal data on grounds related to
+            your particular situation; in this case, we only have the right to
+            process your personal data if we provide legitimate grounds for
+            processing it that are more compelling than your grounds for not
+            processing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">8. How you can raise a complaint</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            You can raise a complaint be sending an email to
+            <a href="mailto:info@atcults.com">info@atcults.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h3 class="privacy-heading">9. Privacy Policy updates</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-view-section mt-3 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="text-center">
+          <p class="desc-text">
+            We will update this Privacy Policy from time to time. Updates may be
+            in response to changes to existing law or changes to security
+            standards and best practices for third-party services or tools that
+            we use. We will update this Privacy Policy as we consider it
+            necessary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} {{ end }}

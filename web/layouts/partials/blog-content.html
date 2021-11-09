@@ -1,0 +1,35 @@
+{{if (isset .Params "description")}}
+<p>{{.Params.description}}</p>
+{{end}} {{if (isset .Params "highlight")}}
+<p class="darkbg-italic pl-5 pr-5 pt-4 pb-4 mb-4">“{{.Params.highlight}}”</p>
+{{end}} 
+
+<!-- paragraph 1 -->
+{{if(isset .Params "ptitle1")}}
+<p>
+  <strong>{{.Params.ptitle1}}</strong>
+  {{if(isset .Params "pdesc1")}}"{{.Params.pdesc1}}"{{end}}
+</p>
+{{end}}
+{{if(isset .Params "pdescriotion1")}}
+<p>
+  {{.Params.pdescriotion1}}
+</p>
+{{end}}
+{{if(isset .Params "pimage1")}}
+<p class="inner-blog-content mb-4">
+  <img
+    src="{{.Params.pimage1}}"
+    alt="Image"
+    class="img-fluid mb-4"
+  />
+</p>
+{{ end }}
+<!-- paragraph 1 end -->
+
+{{if (isset .Params "conclusion")}}
+<p class="inner-blog-content mb-4 conclusion pl-5 pr-5 pt-4 pb-4">
+  Conclusion:<br /><br />
+  {{.Params.conclusion}}
+</p>
+{{end}}

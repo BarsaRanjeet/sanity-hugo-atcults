@@ -1,0 +1,49 @@
+<nav id="navbar">
+    <div class="inner-menu">
+        <ul>
+            <li>
+                {{ if eq .Title "Digital Marketing" }}
+                    <a class="act" href="/services/digital-marketing">Digital Marketing</a>
+                    {{else}}
+                    <a class="inner-menu ul li" href="/services/digital-marketing">Digital Marketing</a>
+                {{ end }}
+            </li>
+            <li>
+                {{ if eq .Title "Mobile and Web Apps" }}
+                    <a class="act" href="/services/mobile-and-web-apps">Mobile &#38; Web Apps</a>
+                    {{else}}
+                    <a class="inner-menu ul li" href="/services/mobile-and-web-apps">Mobile &#38; Web Apps</a>
+                {{ end }}
+            </li>
+            <li>
+                {{ if eq .Title "Microsoft Dynamics 365" }}
+                    <a class="act" href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</a>
+                    {{else}}
+                    <a class="inner-menu ul li" href="/services/microsoft-dynamics-365">Microsoft Dynamics 365</a>
+                {{ end }}
+            </li>
+            <li>
+                {{ if eq .Title "Power Bi" }}
+                    <a class="act" href="/services/power-bi">Power BI</a>
+                    {{else}}
+                    <a class="inner-menu ul li" href="/services/power-bi">Power BI</a>
+                {{ end }}
+                
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    $(window).scroll(function () { myFunction1() });
+  
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction1() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>

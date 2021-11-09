@@ -1,0 +1,78 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+<nav class="navbar navbar-expand-lg navbar-default fixed-top">
+    <div class="container"> <a class="navbar-brand" href="/"><img alt="Atcults Sculpting Future"
+                src="/images/logo-with-text1.png"></a>
+        <button class="btn navbar-toggler" type="button" id="btnToggle" data-toggle="collapse"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0;">
+            <div class="container" onclick="myFunction2(this)" style="padding: 0;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    {{ if eq .Title "Who We Are | Atcults Sculpting Future" }}
+                        <a class="nav-link active" class="nav-link" href="/who-we-are/">WHO WE ARE</a>
+                        {{else}}
+                        <a class="nav-link" class="nav-link" href="/who-we-are/">WHO WE ARE</a>
+                    {{ end }}    
+                </li>
+                <li class="nav-item">
+                    {{ if eq .Title "What We Do | Atcults Sculpting Future" }}
+                        <a class="nav-link active" href="/what-we-do/">WHAT WE DO</a>
+                        {{else}}
+                        <a class="nav-link" href="/what-we-do/">WHAT WE DO</a>
+                    {{ end }}
+                </li>
+                <li class="nav-item">
+                    {{ if eq .Title "Blogs"}}
+                        <a class="nav-link active" href="/blog/">BLOG</a>
+                        {{else}}
+                        <a class="nav-link " href="/blog/">BLOG</a>
+                    {{ end }}
+                </li>
+                <li class="nav-item">
+                    {{ if eq .Title "Work With Us | Atcults Sculpting Future" }}
+                        <a class="nav-link active" href="/work-with-us/">WORK WITH US</a>
+                        {{else}}
+                        <a class="nav-link" href="/work-with-us/">WORK WITH US</a>
+                    {{ end }}    
+                </li>
+                <li class="nav-item">
+                    {{ if eq .Title "Contact Us | Atcults Sculpting Future" }}
+                        <a class="nav-link active" href="/contactus/">INQUIRE NOW</a>
+                    {{else}}
+                        <a class="readmore-button getstarted" href="/contactus/">INQUIRE NOW</a>
+                    {{ end }}
+                </li>
+            </ul>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">WHO WE ARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/what-we-do/">WHAT WE DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work-with-us/">WORK WITH US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+{{ partial "cookies.html" . }}
