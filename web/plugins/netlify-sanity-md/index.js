@@ -53,11 +53,11 @@ module.exports = {
                     ptitle1,ptitle2,ptitle3,ptitle4,ptitle5,ptitle6,ptitle7,ptitle8,ptitle9,ptitle10,ptitle11,ptitle12,ptitle13,ptitle14,ptitle15,
                     pdesc1,pdesc2,pdesc3,pdesc4,pdesc5,pdesc6,pdesc7,pdesc8,pdesc9,pdesc10,pdesc11,pdesc12,pdesc13,pdesc14,pdesc15,
                     pdescription1,pdescription2,pdescription3,pdescription4,pdescription5,pdescription6,pdescription7,pdescription8,pdescription9,pdescription10,pdescription11,pdescription12,pdescription13,pdescription14,pdescription15,
-                    pimage1,pimage2,pimage3,pimage4,pimage5,pimage6,pimage7,pimage8,pimage9,pimage10,pimage11,pimage12,pimage13,pimage14,pimage,15
+                    pimage1,pimage2,pimage3,pimage4,pimage5,pimage6,pimage7,pimage8,pimage9,pimage10,pimage11,pimage12,pimage13,pimage14,pimage15
                 }`)
                 .then((res) =>
                     res.map(async (post) => {
-                        console.log(post)
+                        // console.log(post)
                         //output YAML frontmatter here
                         let frontmatter = "---";
                         Object.keys(post).forEach((field) => {
@@ -83,6 +83,7 @@ module.exports = {
                 );
         } catch (error) {
             utils.build.failBuild("Failure message", { error });
+            console.log(error);
         }
     },
 };
