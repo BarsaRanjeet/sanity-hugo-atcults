@@ -1,1 +1,2 @@
-# This is a CMS project built with Sanity and Hugo
+# sanity-hugo-atcults
+This is a CMS project buiilt in Sanity and Hugo
